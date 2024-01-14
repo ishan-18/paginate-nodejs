@@ -5,12 +5,17 @@
   "main": "app.js",
   "author": "Ishan Gawali",
   "license": "ISC",
-  "dependencies": {
-    "mongoose": "^8.0.4"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ishan-18/paginate-nodejs"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.4",
+    "paginate-nodejs": "^1.0.1"
   },
   "keywords": [
     "nodejs",
