@@ -1,12 +1,16 @@
 {
-  "name": "paginate-node",
-  "version": "1.0.2",
+  "name": "paginate-nodejs",
+  "version": "1.0.0",
   "description": "A NPM Package for Cursor-based and Offset-based Pagination.",
   "main": "index.js",
   "author": "Ishan Gawali",
   "license": "ISC",
   "dependencies": {
     "mongoose": "^8.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishan-18/paginate-nodejs"
   },
   "keywords": [
     "nodejs",

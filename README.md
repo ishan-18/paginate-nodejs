@@ -1,4 +1,4 @@
-# pagination-nodejs
+# paginate-nodejs
 
 This repository contains two pagination functions for Mongoose models: `paginateWithOffset` and `paginateWithCursor`. These functions allow you to easily implement offset-based and cursor-based pagination in your Node.js and Mongoose projects.
 
@@ -10,12 +10,12 @@ This repository contains two pagination functions for Mongoose models: `paginate
 
 ## Installation
 
-To use these pagination functions, you can install the `pagination-nodejs` package as a dependency. Additionally, make sure you have `mongoose` installed if you haven't already:
+To use these pagination functions, you can install the `paginate-nodejs` package as a dependency. Additionally, make sure you have `mongoose` installed if you haven't already:
 
 - [mongoose](https://www.npmjs.com/package/mongoose): An Object Data Modeling (ODM) library for MongoDB.
 
 ```bash
-npm install pagination-nodejs mongoose 
+npm install paginate-nodejs mongoose 
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ Offset pagination is a common pagination method where you specify the page numbe
  * @param {number} [options.sortDirection=1] - Sort direction (1 for ascending, -1 for descending).
  * @returns {Promise<Object>} - An object containing paginated results and metadata.
  */
-const { paginateWithOffset } = require('pagination-nodejs');
+const { paginateWithOffset } = require('paginate-nodejs');
 app.get('/offset-paginate', async (req, res) => {
     try {
         const { page = 1, perPage = 2, sortField = 'age', sortDirection = 1 } = req.query;
@@ -75,7 +75,7 @@ Cursor pagination is a more efficient method for large datasets. It uses a curso
  * @param {number} pageSize - Number of results per page.
  * @returns {Promise<Object>} - An object containing paginated results and metadata.
  */
-const { paginateWithCursor } = require('pagination-nodejs');
+const { paginateWithCursor } = require('paginate-nodejs');
 app.get('/cursor-paginate', async (req, res) => {
     try {
         const { cursor, limit } = req.query;
@@ -97,7 +97,7 @@ app.get('/cursor-paginate', async (req, res) => {
 ```
 
 ## Contributing
-Contributions to `pagination-nodejs` are welcome! If you'd like to contribute to this project, please follow these steps:
+Contributions to `paginate-nodejs` are welcome! If you'd like to contribute to this project, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name.`
 3. Commit your changes: `git commit -m "Add your feature or fix".`
